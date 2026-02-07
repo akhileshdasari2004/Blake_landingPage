@@ -13,8 +13,7 @@ const Navbar = () => {
       <nav className="section-container flex items-center justify-between h-16">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-foreground">GET</span>
-          <span className="text-xl font-serif italic text-primary">Click</span>
+          <span className="text-xl font-bold text-foreground">Blake</span>
         </a>
 
         {/* Desktop Navigation */}

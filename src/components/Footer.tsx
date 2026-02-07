@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 GET Click. All rights reserved.
+            © 2025 Blake. All rights reserved.
           </p>
         </div>
       </div>

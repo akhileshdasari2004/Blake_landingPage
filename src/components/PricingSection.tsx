@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SparklesCore } from "@/components/ui/sparkles";
 import { Check } from "lucide-react";
 
 const pricingPlans = [
@@ -48,8 +49,24 @@ const pricingPlans = [
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="py-24 relative">
-      <div className="section-container">
+    <section id="pricing" className="relative overflow-hidden py-24">
+      {/* Sparkles background */}
+      <div className="absolute inset-0 z-0">
+        <SparklesCore
+          id="pricing-sparkles"
+          background="transparent"
+          minSize={0.4}
+          maxSize={1.2}
+          speed={2}
+          particleDensity={80}
+          particleColor="#7dd3b8"
+          className="absolute inset-0 h-full w-full"
+        />
+      </div>
+      {/* Soft gradient overlay so cards stay readable */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-background/60 via-background/40 to-background/70 pointer-events-none" />
+
+      <div className="section-container relative z-10">
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-16">
           <h2 className="text-4xl md:text-5xl hero-headline">
