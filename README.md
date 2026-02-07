@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# Blake — Landing Page
 
-## Project info
+Landing page for **Blake**, a fast desktop client that brings pull requests, reviews, and deployments into one clean workspace.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Tech stack
 
-## How can I edit this code?
+- **React 18** + **TypeScript**
+- **Vite** for build and dev server
+- **Tailwind CSS** for styling
+- **shadcn/ui** (Radix-based components)
+- **Motion** for scroll and UI animations
+- **Three.js** for hero and feature section backgrounds (shader animation, paper shaders)
 
-There are several ways of editing your application.
+## Getting started
 
-**Use Lovable**
+**Requirements:** Node.js 18+ and npm (or yarn/pnpm).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+```bash
+# Clone the repo
+git clone https://github.com/akhileshdasari2004/Blake_landingPage.git
+cd Blake_landingPage
 
-Changes made via Lovable will be committed automatically to this repo.
+# Install dependencies
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run dev server (with hot reload)
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080) (or the port shown in the terminal).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
 
-**Use GitHub Codespaces**
+| Command        | Description                |
+|----------------|----------------------------|
+| `npm run dev`  | Start dev server           |
+| `npm run build`| Production build           |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint                 |
+| `npm run test` | Run Vitest                 |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project structure
 
-## What technologies are used for this project?
+- `src/components/` — Page sections (Hero, Features, Pricing, Testimonials, etc.) and shared UI
+- `src/components/ui/` — Reusable UI (shadcn, custom shaders, scroll animation)
+- `src/pages/` — Route-level pages
+- `src/index.css` — Global styles and design tokens
 
-This project is built with:
+## Deploy
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Build the app and deploy the `dist` folder to any static host (Vercel, Netlify, GitHub Pages, etc.):
 
-## How can I deploy this project?
+```bash
+npm run build
+# Upload the contents of dist/
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Repo description on GitHub
 
-## Can I connect a custom domain to my Lovable project?
+To make the repo clearly yours, on GitHub go to **Settings → General** and set:
 
-Yes, you can!
+- **Description:** e.g. `Blake — landing page (React, Vite, Tailwind, shadcn/ui)`
+- Remove any template-related **Topics** (e.g. template names) and add ones like `react`, `vite`, `tailwindcss`, `landing-page`, `blake`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Private. All rights reserved.
